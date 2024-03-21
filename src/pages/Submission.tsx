@@ -5,7 +5,7 @@ const Submission = () => {
     const [loading, setLoading] = useState(false)
     const fetchData = async () => {
         try {
-            const res = await fetch('https://tuf-backend-xe6k.onrender.com/submissions');
+            const res = await fetch('https://tuf-backend-xe6k.onrender.com/submissions', { mode: 'no-cors' });
             const data = await res.json();
             setData(data);
         } catch (error) {
