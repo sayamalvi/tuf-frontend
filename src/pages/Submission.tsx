@@ -5,7 +5,7 @@ const Submission = () => {
     const [loading, setLoading] = useState(false)
     const fetchData = async () => {
         try {
-            const res = await fetch('http://localhost:9000/submissions');
+            const res = await fetch('https://tuf-backend-xe6k.onrender.com/submissions');
             const data = await res.json();
             setData(data);
         } catch (error) {
