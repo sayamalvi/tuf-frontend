@@ -79,7 +79,10 @@ const Code = () => {
                     <textarea rows={9} cols={50} name="code" onChange={handleChange} value={data.code} className="border border-solid border-gray-400 w-full p-2 rounded-md" placeholder="Code" />
                 </div>
             </form>
-            {err && <p className="text-red-500 text-center font-bold">{err}</p>}
+            { }
+            {err && setTimeout(() => {
+                <p className="text-red-500 text-center font-bold">{err}</p>
+            }, 1000)}
         </div>
     )
 }
